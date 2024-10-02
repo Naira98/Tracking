@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  font-family: "Cairo", sans-serif;
+}
+
+@layer components {
+  .nav-item {
+    @apply hover:cursor-pointer hover:text-red hover:underline;
+  }
+}
