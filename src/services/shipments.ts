@@ -1,5 +1,6 @@
-export const trackShipment = async (trackingNumber: string) => {
+export const trackShipment = async (trackingNumber: string | undefined) => {
   try {
+    if (!trackingNumber) throw new Error("Please Provide a tracking number");
     const res = await fetch(
       `https://tracking.bosta.co/shipments/track/${trackingNumber}`,
     );

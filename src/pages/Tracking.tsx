@@ -1,70 +1,37 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { trackShipment } from "../services/shipments";
-// import NotFound from "./NotFound";
-// import { Shipment } from "../types/shipmentData";
 import ShipmentInfo from "../components/ShipmentInfo";
 import ShipmentGraph from "../components/ShipmentGraph";
 import ShipmentAddress from "../components/ShipmentAddress";
 import ReportProblem from "../components/ReportProblem";
+import TransitEvents from "../components/TransitEvents";
+import { useGetShipment } from "../hooks/useGetShipment";
+import NotFound from "../components/NotFound";
+import Spinner from "../components/Spinner";
+import { useTrackingNumber } from "../context/useTrackingNumber";
 
 const Tracking = () => {
   const { trackingNumber } = useParams();
-  console.log(trackingNumber);
+  const { setTrackingNumber } = useTrackingNumber();
 
   useEffect(() => {
-    (async function () {
-      if (trackingNumber) {
-        const data = await trackShipment(trackingNumber);
-        // if (data.error) return <NotFound />
-        console.log(data);
-      }
-    })();
-  }, [trackingNumber]);
-  //   const [enabled, setEnabled] = useState<boolean>(false);
+    if (trackingNumber) setTrackingNumber(trackingNumber);
+  }, [trackingNumber, setTrackingNumber]);
 
-  //   const { data, isPending, error } = useGetShipment(trackingNumber, enabled);
-  //   const handleClick = () => {
-  //     if (!isDisabled) setEnabled(true);
-  //   };
-  //   useEffect(() => {
-  //     console.log(data);
-  //   }, [data]);
-  //   if (error) {
-  //     navigate("/not-found");
-  //   }
+  const { isPending, error } = useGetShipment(trackingNumber);
 
-  //   if (isPending)
-  //     return (
-  //       <div
-  //         style={{
-  //           display: "flex",
-  //           justifyContent: "center",
-  //           alignItems: "center",
-  //           height: "100vh",
-  //         }}
-  //       >
-  //         <Spinner />
-  //       </div>
-  //     );
-  //   // console.log(data);
+  if (isPending) return <Spinner />;
+  if (error) return <NotFound />;
 
-  // const handleClick = async () => {
-  //   if (!isDisabled) {
-  //     // const data = await trackShipment(trackingNumber)
-  //     // console.log(data)
-  //     navigate(`/track-shipments/${trackingNumber}`);
-  //   }
-  // };
   return (
-    <div className="grid grid-cols-1 gap-6 px-20 py-6 md:grid-cols-3">
-      <div className="col-span-1 border-2 border-slate md:col-span-3 rounded-md">
+    <div className="grid grid-cols-1 gap-6 px-20 py-10 md:grid-cols-3">
+      <div className="col-span-1 rounded-md border-2 border-slate md:col-span-3">
         <ShipmentInfo />
         <ShipmentGraph />
       </div>
 
       <div className="col-span-1 border-2 border-slate md:col-span-2">
-        <ShipmentInfo />
+        <TransitEvents />
       </div>
 
       <div className="col-span-1 border-2 border-slate">

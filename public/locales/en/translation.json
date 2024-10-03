@@ -13,8 +13,13 @@
   "shipmentNumber": "Shipment Number",
   "lastUpdate": "Last Update",
   "soldBy": "Sold By",
+  "soldByExample": "SOUQ.COM",
   "arrivingDate": "Arriving Date in",
   "transitEvents": "Transit Events",
+  "DELIVERED": "Deliverd Shipment",
+  "CANCELED": "Canceled Shipment",
+  "DELIVERED_TO_SENDER": "Shipment not delivered yet",
+
   "branch": "Branch",
   "date": "Date",
   "time": "Time",
