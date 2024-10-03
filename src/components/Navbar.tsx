@@ -1,11 +1,13 @@
 import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 import { Link } from "react-router-dom";
+import { useMediaQuery } from "@mui/material";
 import { useLang } from "../context/useLang";
 
 const Navbar = () => {
   const { t } = useTranslation();
   const { lang, setLang } = useLang();
+  const isSmallScreen = useMediaQuery(`(max-width:768px)`);
 
   const handleChangeLang = () => {
     const newLang = lang === "ar" ? "en" : "ar";
@@ -24,30 +26,24 @@ const Navbar = () => {
           />
         </Link>
         <Link to="/">
-          <span className="text-2xl font-extrabold text-red">{t("title")}</span>
+          <span className="text-red-primary text-2xl font-extrabold">
+            {t("title")}
+          </span>
         </Link>
       </div>
 
-      <div className="flex gap-6 font-extrabold">
-        <span className="nav-item">
-          {t("Home")}{" "}
-        </span>
-        <span className="nav-item">
-          {t("Prices")}
-        </span>
-        <span className="nav-item">
-          {t("Call sales")}
-        </span>
-      </div>
+      {!isSmallScreen && (
+        <div className="flex gap-6 font-extrabold">
+          <span className="nav-item">{t("home")} </span>
+          <span className="nav-item">{t("prices")}</span>
+          <span className="nav-item">{t("callSales")}</span>
+        </div>
+      )}
 
       <div className="flex gap-6 font-extrabold">
-        <span className="nav-item">
-          {t("Track shipment")}
-        </span>
-        <span className="nav-item">
-          {t("Sign up")}
-        </span>
-        <button className="text-red" onClick={handleChangeLang}>
+        <span className="nav-item">{t("trackShipment")}</span>
+        <span className="nav-item">{t("signUp")}</span>
+        <button className="text-red-primary" onClick={handleChangeLang}>
           {t("Lang")}
         </button>
       </div>
