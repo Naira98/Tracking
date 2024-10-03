@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ShipmentInfo from "../components/ShipmentInfo";
-import ShipmentGraph from "../components/ShipmentGraph";
+import ShipmentTimeline from "../components/ShipmentTimeline";
 import ShipmentAddress from "../components/ShipmentAddress";
 import ReportProblem from "../components/ReportProblem";
 import TransitEvents from "../components/TransitEvents";
@@ -27,7 +27,7 @@ const Tracking = () => {
     <div className="grid grid-cols-1 gap-6 px-20 py-10 md:grid-cols-3">
       <div className="col-span-1 rounded-md border-2 border-slate md:col-span-3">
         <ShipmentInfo />
-        <ShipmentGraph />
+        <ShipmentTimeline />
       </div>
 
       <div className="col-span-1 border-2 border-slate md:col-span-2">
