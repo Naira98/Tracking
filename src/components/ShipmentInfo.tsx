@@ -26,7 +26,7 @@ const ShipmentInfo = () => {
         <h1 className="text-gray-primary">
           {t("shipmentNumber")} # {data!.TrackingNumber}
         </h1>
-        <h1 className={`font-bold ${stateColor}`}>{t(`${shipmentState}`)}</h1>
+        <h1 className={`font-bold ${stateColor}`}>{t(`STATE_${shipmentState}`)}</h1>
       </div>
 
       <div className="flex flex-col gap-3">

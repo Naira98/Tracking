@@ -1,7 +1,5 @@
 const ShipmentGraph = () => {
-  return (
-    <div>ShipmentGraph</div>
-  )
-}
+  return <div className="px-10 py-7">ShipmentGraph</div>;
+};
 
-export default ShipmentGraph
+export default ShipmentGraph;

@@ -1,13 +1,11 @@
 import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 import { Link } from "react-router-dom";
-import { useMediaQuery } from "@mui/material";
 import { useLang } from "../context/useLang";
 
 const Navbar = () => {
   const { t } = useTranslation();
   const { lang, setLang } = useLang();
-  const isSmallScreen = useMediaQuery(`(max-width:768px)`);
 
   const handleChangeLang = () => {
     const newLang = lang === "ar" ? "en" : "ar";
@@ -32,13 +30,13 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {!isSmallScreen && (
+      <div className="hidden md:block">
         <div className="flex gap-6 font-extrabold">
           <span className="nav-item">{t("home")} </span>
           <span className="nav-item">{t("prices")}</span>
           <span className="nav-item">{t("callSales")}</span>
         </div>
-      )}
+      </div>
 
       <div className="flex gap-6 font-extrabold">
         <span className="nav-item">{t("trackShipment")}</span>

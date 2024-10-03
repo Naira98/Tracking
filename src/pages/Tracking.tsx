@@ -20,8 +20,8 @@ const Tracking = () => {
 
   const { isPending, error } = useGetShipment(trackingNumber);
 
-  if (isPending) return <Spinner />;
   if (error) return <NotFound />;
+  if (isPending) return <Spinner />;
 
   return (
     <div className="grid grid-cols-1 gap-6 px-20 py-10 md:grid-cols-3">
