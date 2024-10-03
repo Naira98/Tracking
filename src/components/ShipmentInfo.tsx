@@ -2,11 +2,8 @@ import { useTranslation } from "react-i18next";
 import { useLang } from "../context/useLang";
 import { useTrackingNumber } from "../context/useTrackingNumber";
 import { useGetShipment } from "../hooks/useGetShipment";
-import {
-  formatDateWithDay,
-  formatDateWithTime,
-  getStateColor,
-} from "../utils/helpers";
+import { formatDateWithDay, formatDateWithTime } from "../utils/dateFormat";
+import { getStateColor } from "../utils/stateColor";
 
 const ShipmentInfo = () => {
   const { trackingNumber } = useTrackingNumber();
@@ -26,7 +23,9 @@ const ShipmentInfo = () => {
         <h1 className="text-gray-primary">
           {t("shipmentNumber")} # {data!.TrackingNumber}
         </h1>
-        <h1 className={`font-bold ${stateColor}`}>{t(`STATE_${shipmentState}`)}</h1>
+        <h1 className={`font-bold ${stateColor}`}>
+          {t(`STATE_${shipmentState}`)}
+        </h1>
       </div>
 
       <div className="flex flex-col gap-3">

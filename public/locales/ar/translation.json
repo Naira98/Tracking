@@ -16,7 +16,7 @@
   "soldByExample": "سوق.كوم",
   "arrivingDate": "موعد التسليم خلال",
   "STATE_DELIVERED": "تم تسليم الشحنة",
-  "STATE_CANCELED": "تم إلغاء الشحنة",
+  "STATE_CANCELLED": "تم إلغاء الشحنة",
   "STATE_DELIVERED_TO_SENDER": "الشحنة لم تصل بعد",
   "transitEvents": "تفاصيل الشحنة",
   "branch": "الفرع",

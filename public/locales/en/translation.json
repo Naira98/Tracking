@@ -17,7 +17,7 @@
   "arrivingDate": "Arriving Date in",
   "transitEvents": "Transit Events",
   "STATE_DELIVERED": "Deliverd Shipment",
-  "STATE_CANCELED": "Canceled Shipment",
+  "STATE_CANCELLED": "Canceled Shipment",
   "STATE_DELIVERED_TO_SENDER": "Shipment not delivered yet",
   "TICKET_CREATED": "",
   "PACKAGE_RECEIVED": "",
