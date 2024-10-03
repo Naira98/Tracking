@@ -1,7 +1,7 @@
-const Home = () => {
-  return (
-    <div>Home</div>
-  )
-}
+import TrackForm from "../components/TrackForm";
 
-export default Home
+const Home = () => {
+  return <TrackForm />
+};
+
+export default Home;

@@ -9,6 +9,7 @@ import Tracking from "./pages/Tracking";
 import AppLayout from "./components/AppLayout";
 import { useLang } from "./context/useLang";
 import "./utils/lang";
+import NotFound from "./pages/NotFound";
 
 const App = () => {
   const queryClient = new QueryClient({
@@ -33,6 +34,7 @@ const App = () => {
               path="/track-shipments/:trackingNumber"
               element={<Tracking />}
             />
+          <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </BrowserRouter>

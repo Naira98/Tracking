@@ -8,7 +8,7 @@ export default {
       xl: "1440px",
     },
     colors: {
-      red: "#e30818",
+      red: {primary: "#e30818", secondary: '#ef4444'},
       green: "#22c55e",
       yellow: "#facc15",
       white: "#ffffff",
