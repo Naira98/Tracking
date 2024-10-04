@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-const ShipmentAddress = () => {
+const AddressShipment = () => {
   const { t } = useTranslation();
   return (
     <div className="flex flex-col gap-3">
@@ -12,4 +12,4 @@ const ShipmentAddress = () => {
   );
 };
 
-export default ShipmentAddress;
+export default AddressShipment;

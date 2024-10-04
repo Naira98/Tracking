@@ -5,7 +5,7 @@ import { FiSave } from "react-icons/fi";
 import { useShipment } from "../context/useShipment";
 import { useTranslation } from "react-i18next";
 
-const ShipmentTimeline = () => {
+const TimelineShipment = () => {
   const { stateColor } = useShipment();
   const { t } = useTranslation();
   return (
@@ -36,4 +36,4 @@ const ShipmentTimeline = () => {
   );
 };
 
-export default ShipmentTimeline;
+export default TimelineShipment;

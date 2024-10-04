@@ -6,7 +6,7 @@ import { formatDateWithDay, formatDateWithTime } from "../utils/dateFormat";
 import { getStateColor } from "../utils/stateColor";
 import { useEffect } from "react";
 
-const ShipmentInfo = () => {
+const InfoShipment = () => {
   const { trackingNumber, setStateColor } = useShipment();
   const { data } = useGetShipment(trackingNumber!);
   const { t } = useTranslation();
@@ -56,4 +56,4 @@ const ShipmentInfo = () => {
   );
 };
 
-export default ShipmentInfo;
+export default InfoShipment;
