@@ -1,7 +1,15 @@
-const ShipmentAddress = () => {
-  return (
-    <div>ShipmentAddress</div>
-  )
-}
+import { useTranslation } from "react-i18next";
 
-export default ShipmentAddress
+const ShipmentAddress = () => {
+  const { t } = useTranslation();
+  return (
+    <div className="flex flex-col gap-3">
+      <h1>{t("ADDRESS.TITLE")}</h1>
+      <div className="bg-gray-secondary rounded-md border-2 border-slate">
+        <h1 className="p-5">{t("ADDRESS.ADDRESS_EXAMPLE")}</h1>
+      </div>
+    </div>
+  );
+};
+
+export default ShipmentAddress;

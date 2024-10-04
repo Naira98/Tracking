@@ -66,7 +66,12 @@
     "Cancellation - The customer refuses to give the shipment to the star": "The customer refuses to give the shipment to the star",
     "Uncovered Zone": "Uncovered Zone"
   },
-  "deliveryAddress": "Delivery Address",
-  "doYouHaveAnyProblem": "Do you have any problem in your shipment ?!",
-  "reportProblem": "Report a problem"
+  "ADDRESS": {
+    "TITLE": "Delivery Address",
+    "ADDRESS_EXAMPLE": "House 17, Block 22, Talaat Harb Street, El Ommal City, next to Prince Imbaba, Cairo"
+  },
+  "PROBLEM": {
+    "TITLE": "Do you have any problem in your shipment ?!",
+    "REPORT": "Report a problem"
+  }
 }

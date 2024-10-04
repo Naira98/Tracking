@@ -8,8 +8,8 @@ export default {
       xl: "1440px",
     },
     colors: {
-      red: {primary: "#e30818", secondary: '#ef4444'},
-      gray: {primary: '#a1a1a1', secondary: '#fafafa'},
+      red: { primary: "#e30818", secondary: "#ef4444", tertiary: "#b91c1c" },
+      gray: { primary: "#a1a1a1", secondary: "#fafafa" },
       green: "#22c55e",
       yellow: "#facc15",
       white: "#ffffff",

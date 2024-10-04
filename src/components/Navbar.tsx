@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex h-16 items-center justify-between border-b-2 border-slate p-10 px-20 sticky top-0  opacity-100">
+    <nav className="sticky top-0 flex h-16 items-center justify-between border-b-2 border-slate bg-white p-10 px-20">
       <div className="flex items-center justify-center">
         <Link to="/">
           <img

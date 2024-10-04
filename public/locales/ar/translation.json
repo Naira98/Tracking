@@ -66,7 +66,12 @@
     "Cancellation - The customer refuses to give the shipment to the star": "رفض العميل إعطاء الشحنة للنجم",
     "Uncovered Zone": "خارج منطقة التوصيل"
   },
-  "deliveryAddress": "عنوان التسليم",
-  "doYouHaveAnyProblem": "هل لديك مشكلة في شحنتك ؟!",
-  "reportProblem": "إبلاغ عن مشكلة"
+  "ADDRESS": {
+    "TITLE": "عنوان التسليم",
+    "ADDRESS_EXAMPLE": "منزل ١٧ بلوك ٢٢ شارع طلعت حرب مدينة العمال بجوار البرنس امبابة القاهرة"
+  },
+  "PROBLEM": {
+    "TITLE": "هل لديك مشكلة في شحنتك ؟!",
+    "REPORT": "إبلاغ عن مشكلة"
+  }
 }

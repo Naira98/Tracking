@@ -36,7 +36,7 @@ const Tracking = () => {
         <TransitEvents />
       </div>
 
-      <div className="col-span-1 border-2 border-slate">
+      <div className="col-span-1">
         <ShipmentAddress />
         <ReportProblem />
       </div>
