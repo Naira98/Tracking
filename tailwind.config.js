@@ -15,6 +15,7 @@ export default {
       white: "#ffffff",
       slate: "#f1f5f9",
       black: "#0f172a",
+      sky: '#f3fafb'
     },
     fontFamily: {
       cairo: ["Cairo"],

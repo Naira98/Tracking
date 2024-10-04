@@ -1,7 +1,18 @@
 const Spinner = () => {
   return (
-    <div>Spinner</div>
-  )
-}
+    <div
+      style={{
+        width: "100%",
+        height: "100%",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: "80px"
+      }}
+    >
+      <span className="loader"></span>
+    </div>
+  );
+};
 
-export default Spinner
+export default Spinner;

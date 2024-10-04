@@ -1,10 +1,10 @@
 export const getStateColor = (state: string) => {
     if (state === "DELIVERED_TO_SENDER") {
-      return "text-yellow";
+      return "yellow";
     } else if (state === "DELIVERED") {
-      return "text-green";
+      return "green";
     } else if (state === "CANCELLED") {
-      return "text-red-primary";
+      return "red-primary";
     }
     return null;
   };

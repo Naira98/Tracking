@@ -10,13 +10,13 @@ const TransitRow = ({ row }: { row: State }) => {
   const { stateColor } = useShipment();
   return (
     <>
-      <h1 className="bg-white">{row.hub ? t(`HUB.${row.hub}`) : "-"}</h1>
-      <h1 className="bg-white">{formatDate(row.timestamp, lang)}</h1>
-      <h1 className="bg-white">{formatTime(row.timestamp, lang)}</h1>
-      <div>
-        <h1 className="bg-white">{t(`TRANSIT_EVENTS.${row.state}`)}</h1>
+      <h1 className="table-row">{row.hub ? t(`HUB.${row.hub}`) : "-"}</h1>
+      <h1 className="table-row">{formatDate(row.timestamp, lang)}</h1>
+      <h1 className="table-row">{formatTime(row.timestamp, lang)}</h1>
+      <div className="table-row">
+        <h1 >{t(`TRANSIT_EVENTS.${row.state}`)}</h1>
         {row.reason && (
-          <h1 className={`bg-white ${stateColor}`}>{t(`REASONS.${row.reason}`)}</h1>
+          <h1 className={`text-${stateColor}`}>{t(`REASONS.${row.reason}`)}</h1>
         )}
       </div>
     </>

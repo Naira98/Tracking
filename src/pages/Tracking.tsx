@@ -5,9 +5,9 @@ import ShipmentTimeline from "../components/ShipmentTimeline";
 import ShipmentAddress from "../components/ShipmentAddress";
 import ReportProblem from "../components/ReportProblem";
 import TransitEvents from "../components/TransitEvents";
-import { useGetShipment } from "../hooks/useGetShipment";
-import NotFound from "../components/NotFound";
+import NotFoundComponent from "../components/NotFoundComponent";
 import Spinner from "../components/Spinner";
+import { useGetShipment } from "../hooks/useGetShipment";
 import { useShipment } from "../context/useShipment";
 
 const Tracking = () => {
@@ -22,7 +22,7 @@ const Tracking = () => {
     }
   }, [trackingNumber, setTrackingNumber]);
 
-  if (error) return <NotFound />;
+  if (error) return <NotFoundComponent location="ORDER" />;
   if (isPending) return <Spinner />;
 
   return (

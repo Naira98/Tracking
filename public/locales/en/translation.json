@@ -10,11 +10,13 @@
   },
   "404_PAGE": {
     "404": "404 - Not Found",
-    "404_QUOTE": "Sorry, the page you are looking for does not exist.",
+    "404_ORDER_QUOTE": "Sorry, the order you are looking for does not exist.",
+    "404_PAGE_QUOTE": "Sorry, the page you are looking for does not exist.",
     "GO_BACK": "Go Back"
   },
   "TRACK_FORM": {
-    "TRACK_SHIPMENT": "Track Shipment",
+    "TRACK_SHIPMENT": "Track You Order",
+    "TRACKING_QUOTE":"All order updates will be available through this link.",
     "TRACKING_NUMBER": "Tracking Number"
   },
   "TRACKING_INFO": {

@@ -27,7 +27,7 @@ const ShipmentInfo = () => {
         <h1 className="text-gray-primary">
           {t("TRACKING_INFO.SHIPMENT_NUMBER")} # {data!.TrackingNumber}
         </h1>
-        <h1 className={`font-bold ${stateColor}`}>
+        <h1 className={`font-bold text-${stateColor}`}>
           {t(`CURRENT_STATE.${data!.CurrentStatus.state}`)}
         </h1>
       </div>
