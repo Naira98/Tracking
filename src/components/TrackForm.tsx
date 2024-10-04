@@ -17,12 +17,12 @@ const TrackForm = () => {
 
   return (
     <div className="flex w-fit flex-col justify-center gap-4 rounded-md border-2 border-slate px-7 py-5 shadow-md">
-      <h1 className="">{t("trackShipment")}</h1>
+      <h1 className="">{t("TRACK_FORM.TRACK_SHIPMENT")}</h1>
       <div className="flex items-center justify-center">
         <input
           className="h-9 rounded-s-md border-2 border-slate px-1 transition-all focus:outline-none focus:ring focus:ring-slate focus:ring-opacity-75 focus:ring-offset-0"
           type="text"
-          placeholder={t("trackingNumber")}
+          placeholder={t("TRACK_FORM.TRACKING_NUMBER")}
           value={trackingNumber}
           onChange={(e) => setTrackingNumber(e.target.value)}
         />

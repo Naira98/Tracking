@@ -14,3 +14,16 @@ export const formatDateWithDay = (date: string, lang: string) => {
   }).format(Date.parse(date));
 };
 
+export const formatDate = (date: string, lang: string) => {
+  return new Intl.DateTimeFormat([`${lang === "ar" ? "ar" : "en"}`], {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(Date.parse(date));
+};
+
+export const formatTime = (date: string, lang: string) => {
+  return new Intl.DateTimeFormat([`${lang === "ar" ? "ar" : "en"}`], {
+    timeStyle: "short",
+  }).format(Date.parse(date));
+};

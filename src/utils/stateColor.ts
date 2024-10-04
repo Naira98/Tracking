@@ -6,4 +6,5 @@ export const getStateColor = (state: string) => {
     } else if (state === "CANCELLED") {
       return "text-red-primary";
     }
+    return null;
   };

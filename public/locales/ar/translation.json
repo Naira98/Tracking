@@ -1,28 +1,71 @@
 {
-  "title": "بوسطة",
-  "home": "الرئيسية",
-  "prices": "الأسعار",
-  "callSales": "كلم المبيعات",
-  "trackShipment": "تتبع شحنتك",
-  "signUp": "تسجيل الدخول",
-  "Lang": "ENG",
-  "404": "٤٠٤ - لا توجد",
-  "404-quote": "عفوا الصفحة المطلوبة غير موجودة",
-  "goBack": "العودة للخلف",
-  "trackingNumber": "رقم التتبع",
-  "shipmentNumber": "رقم الشحنة",
-  "lastUpdate": "آخر تحديث",
-  "soldBy": "اسم التاجر",
-  "soldByExample": "سوق.كوم",
-  "arrivingDate": "موعد التسليم خلال",
-  "STATE_DELIVERED": "تم تسليم الشحنة",
-  "STATE_CANCELLED": "تم إلغاء الشحنة",
-  "STATE_DELIVERED_TO_SENDER": "الشحنة لم تصل بعد",
-  "transitEvents": "تفاصيل الشحنة",
-  "branch": "الفرع",
-  "date": "التاريخ",
-  "time": "الوقت",
-  "details": "تفاصيل",
+  "NAVBAR": {
+    "TITLE": "بوسطة",
+    "HOME": "الرئيسية",
+    "PRICES": "الأسعار",
+    "CALL_SALES": "كلم المبيعات",
+    "TRACK_SHIPMENT": "تتبع شحنتك",
+    "SIGN_UP": "تسجيل الدخول",
+    "LANG": "ENG"
+  },
+  "404_PAGE": {
+    "404": "٤٠٤ - لا توجد",
+    "404_QUOTE": "عفوا الصفحة المطلوبة غير موجودة",
+    "GO_BACK": "العودة للخلف"
+  },
+  "TRACK_FORM": {
+    "TRACK_SHIPMENT": "تتبع شحنتك",
+    "TRACKING_NUMBER": "رقم التتبع"
+  },
+  "TRACKING_INFO": {
+    "SHIPMENT_NUMBER": "رقم الشحنة",
+    "LAST_UPDATE": "آخر تحديث",
+    "SOLD_BY": "اسم التاجر",
+    "SOLD_BY_EXAMPLE": "سوق.كوم",
+    "ARRIVING_DATE": "موعد التسليم خلال"
+  },
+  "CURRENT_STATE": {
+    "DELIVERED": "تم تسليم الشحنة",
+    "DELIVERED_TO_SENDER": "الشحنة لم تصل بعد",
+    "CANCELLED": "تم إلغاء الشحنة"
+  },
+  "TIMELINE": {
+    "TICKET_CREATED": "تم إنشاء الشحنة",
+    "PACKAGE_RECEIVED": "تم إستلام الشحنة",
+    "OUT_FOR_DELIVERY": "الشحنة خرجت للتسليم",
+    "DELIVERED": "تم التسليم"
+  },
+  "TRANSIT_EVENTS": {
+    "TITLE": "تفاصيل الشحنة",
+    "BRANCH": "الفرع",
+    "DATE": "التاريخ",
+    "TIME": "الوقت",
+    "DETAILS": "تفاصيل",
+
+    "TICKET_CREATED": "تم إنشاء الشحنة",
+    "PACKAGE_RECEIVED": "تم إستلام الشحنة من التاجر",
+    "OUT_FOR_DELIVERY": "الشحنة خرجت للتسليم",
+    "DELIVERED": "تم التسليم",
+
+    "NOT_YET_SHIPPED": "لم تشحن بعد",
+    "AVAILABLE_FOR_PICKUP": "الشحنة جاهزة للتوصيل",
+    "WAITING_FOR_CUSTOMER_ACTION": "في إنتظار رد العميل",
+    "CANCELLED": "تم إلغاء الشحنة",
+
+    "IN_TRANSIT": "في الإنتظار",
+    "DELIVERY_FAILED": "فشل التوصيل",
+    "DELIVERED_TO_SENDER": "الشحنة وصلت للبائع"
+  },
+  "HUB": {
+    "El-Mansoura Hub": "مركز المنصورة",
+    "Cairo Sorting Facility": "منشأة الفرز بالقاهرة",
+    "Beni Suef Hub": "مركز بني سويف",
+    "FM & Reverse Hub": "FM & Reverse Hub"
+  },
+  "REASONS": {
+    "Cancellation - The customer refuses to give the shipment to the star": "رفض العميل إعطاء الشحنة للنجم",
+    "Uncovered Zone": "خارج منطقة التوصيل"
+  },
   "deliveryAddress": "عنوان التسليم",
   "doYouHaveAnyProblem": "هل لديك مشكلة في شحنتك ؟!",
   "reportProblem": "إبلاغ عن مشكلة"

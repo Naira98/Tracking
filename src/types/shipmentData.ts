@@ -16,10 +16,11 @@ export interface Error {
   status: string;
 }
 
-interface State {
+export interface State {
   state: string;
   timestamp: string;
   hub?: string;
+  reason?: string;
 }
 
 interface Day {

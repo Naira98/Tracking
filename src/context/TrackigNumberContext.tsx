@@ -1,25 +1,22 @@
 import React, { createContext, ReactNode, useState } from "react";
 
-interface ITrackingNumber {
+interface IShipment {
   trackingNumber: string | null;
   setTrackingNumber: React.Dispatch<React.SetStateAction<string | null>>;
+  stateColor: string | null;
+  setStateColor: React.Dispatch<React.SetStateAction<string | null>>;
 }
 
-export const TrackingNumberContext = createContext<ITrackingNumber | null>(
-  null,
-);
+export const ShipmentContext = createContext<IShipment | null>(null);
 
-export const TrackingNumberProvider = ({
-  children,
-}: {
-  children: ReactNode;
-}) => {
+export const ShipmentProvider = ({ children }: { children: ReactNode }) => {
   const [trackingNumber, setTrackingNumber] = useState<string | null>(null);
+  const [stateColor, setStateColor] = useState<string | null>(null);
   return (
-    <TrackingNumberContext.Provider
-      value={{ trackingNumber, setTrackingNumber }}
+    <ShipmentContext.Provider
+      value={{ trackingNumber, setTrackingNumber, stateColor, setStateColor }}
     >
       {children}
-    </TrackingNumberContext.Provider>
+    </ShipmentContext.Provider>
   );
 };

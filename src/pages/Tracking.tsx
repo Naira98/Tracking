@@ -8,17 +8,19 @@ import TransitEvents from "../components/TransitEvents";
 import { useGetShipment } from "../hooks/useGetShipment";
 import NotFound from "../components/NotFound";
 import Spinner from "../components/Spinner";
-import { useTrackingNumber } from "../context/useTrackingNumber";
+import { useShipment } from "../context/useShipment";
 
 const Tracking = () => {
   const { trackingNumber } = useParams();
-  const { setTrackingNumber } = useTrackingNumber();
-
-  useEffect(() => {
-    if (trackingNumber) setTrackingNumber(trackingNumber);
-  }, [trackingNumber, setTrackingNumber]);
+  const { setTrackingNumber } = useShipment();
 
   const { isPending, error } = useGetShipment(trackingNumber);
+  
+  useEffect(() => {
+    if (trackingNumber) {
+      setTrackingNumber(trackingNumber);
+    }
+  }, [trackingNumber, setTrackingNumber]);
 
   if (error) return <NotFound />;
   if (isPending) return <Spinner />;
@@ -30,7 +32,7 @@ const Tracking = () => {
         <ShipmentTimeline />
       </div>
 
-      <div className="col-span-1 border-2 border-slate md:col-span-2">
+      <div className="col-span-1 md:col-span-2">
         <TransitEvents />
       </div>
 

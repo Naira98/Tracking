@@ -14,35 +14,35 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex h-16 items-center justify-between border-b-2 border-slate p-10 px-20">
+    <nav className="flex h-16 items-center justify-between border-b-2 border-slate p-10 px-20 sticky top-0  opacity-100">
       <div className="flex items-center justify-center">
         <Link to="/">
           <img
             className="h-14 w-14"
             src="/bosta-logo.png"
-            alt={`${t("title")}`}
+            alt={t("NAVBAR.TITLE")}
           />
         </Link>
         <Link to="/">
           <span className="text-red-primary text-2xl font-extrabold">
-            {t("title")}
+            {t("NAVBAR.TITLE")}
           </span>
         </Link>
       </div>
 
       <div className="hidden md:block">
         <div className="flex gap-6 font-extrabold">
-          <span className="nav-item">{t("home")} </span>
-          <span className="nav-item">{t("prices")}</span>
-          <span className="nav-item">{t("callSales")}</span>
+          <span className="nav-item">{t("NAVBAR.HOME")} </span>
+          <span className="nav-item">{t("NAVBAR.PRICES")}</span>
+          <span className="nav-item">{t("NAVBAR.CALL_SALES")}</span>
         </div>
       </div>
 
       <div className="flex gap-6 font-extrabold">
-        <span className="nav-item">{t("trackShipment")}</span>
-        <span className="nav-item">{t("signUp")}</span>
+        <span className="nav-item">{t("NAVBAR.TRACK_SHIPMENT")}</span>
+        <span className="nav-item">{t("NAVBAR.SIGN_UP")}</span>
         <button className="text-red-primary" onClick={handleChangeLang}>
-          {t("Lang")}
+          {t("NAVBAR.LANG")}
         </button>
       </div>
     </nav>

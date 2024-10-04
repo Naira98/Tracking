@@ -20,7 +20,7 @@ const App = () => {
 
   useEffect(() => {
     window.document.dir = i18n.dir();
-    document.title = t("title");
+    document.title = t("NAVBAR.TITLE");
   }, [lang, t]);
 
   return (
