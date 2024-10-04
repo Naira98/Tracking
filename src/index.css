@@ -34,6 +34,6 @@
     @apply bg-gray-secondary text-gray-primary h-14;
   }
   .table-row {
-    @apply h-14 border-b-2 border-slate;
+    @apply h-14 border-b-2 border-slate-primary;
   }
 }

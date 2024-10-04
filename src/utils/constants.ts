@@ -1,0 +1,1 @@
+export const SUPPORT_PHONE_NUMBER=19043

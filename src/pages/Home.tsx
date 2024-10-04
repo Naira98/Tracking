@@ -5,7 +5,7 @@ const Home = () => {
   const { t } = useTranslation();
   return (
     <div className="px-5 py-10">
-      <div className="bg-sky flex flex-col items-center rounded-xl">
+      <div className="bg-sky flex flex-col items-center rounded-xl py-3">
         <img src="/location.png" alt="location" />
         <h1 className="mb-6 text-3xl font-bold">
           {t("TRACK_FORM.TRACK_SHIPMENT")}

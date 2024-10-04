@@ -21,9 +21,9 @@ const SearchShipment = ({
     }
   };
   return (
-    <div className="flex items-center justify-center">
+    <form className="flex items-center justify-center">
       <input
-        className={`h-${height} w-${width} rounded-s-md border-2 border-slate px-1 shadow-md transition-all focus:outline-none focus:ring focus:ring-slate focus:ring-opacity-75 focus:ring-offset-0`}
+        className={`h-${height} w-${width} rounded-s-md border-2 border-slate-primary px-1 shadow-md transition-all focus:outline-none focus:ring focus:ring-slate-primary focus:ring-opacity-75 focus:ring-offset-0`}
         type="text"
         placeholder={t("TRACK_FORM.TRACKING_NUMBER")}
         value={trackingNumber}
@@ -35,7 +35,7 @@ const SearchShipment = ({
       >
         <SearchIcon className="text-white" />
       </button>
-    </div>
+    </form>
   );
 };
 

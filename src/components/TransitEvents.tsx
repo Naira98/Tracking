@@ -11,7 +11,7 @@ const TransitEvents = () => {
     <div className="flex flex-col gap-3">
       <h1>{t("TRANSIT_EVENTS.TITLE")}</h1>
 
-      <div className="grid grid-cols-[1fr_1fr_1fr_2fr] rounded-md border-2 border-slate">
+      <div className="grid grid-cols-[1fr_1fr_1fr_2fr] rounded-md border-2 border-slate-primary">
         <div className="tabel-head">{t("TRANSIT_EVENTS.BRANCH")}</div>
         <div className="tabel-head">{t("TRANSIT_EVENTS.DATE")}</div>
         <div className="tabel-head">{t("TRANSIT_EVENTS.TIME")}</div>

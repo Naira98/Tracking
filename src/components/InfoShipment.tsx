@@ -22,7 +22,7 @@ const InfoShipment = () => {
   }, [stateColor, setStateColor]);
 
   return (
-    <div className="flex items-center justify-between border-b-2 border-slate px-10 py-7">
+    <div className="flex items-center justify-between border-b-2 border-slate-primary px-10 py-7">
       <div className="flex flex-col gap-3">
         <h1 className="text-gray-primary">
           {t("TRACKING_INFO.SHIPMENT_NUMBER")} # {data!.TrackingNumber}

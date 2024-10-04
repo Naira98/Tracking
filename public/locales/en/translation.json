@@ -3,6 +3,8 @@
     "TITLE": "Bosta",
     "HOME": "Home",
     "PRICES": "Prices",
+    "LARGE_COMPANY": "Large Company",
+    "SMALL_COMPANY": "Small Or Medium Company",
     "CALL_SALES": "Call Sales",
     "TRACK_SHIPMENT": "Track Shipment",
     "SIGN_UP": "Sign Up",
@@ -16,7 +18,7 @@
   },
   "TRACK_FORM": {
     "TRACK_SHIPMENT": "Track You Order",
-    "TRACKING_QUOTE":"All order updates will be available through this link.",
+    "TRACKING_QUOTE": "All order updates will be available through this link.",
     "TRACKING_NUMBER": "Tracking Number"
   },
   "TRACKING_INFO": {
@@ -74,6 +76,7 @@
   },
   "PROBLEM": {
     "TITLE": "Do you have any problem in your shipment ?!",
-    "REPORT": "Report a problem"
+    "REPORT": "Report a problem",
+    "CONTACT_US": "Contact Us On: "
   }
 }

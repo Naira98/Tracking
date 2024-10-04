@@ -13,9 +13,9 @@ export default {
       green: "#22c55e",
       yellow: "#facc15",
       white: "#ffffff",
-      slate: "#f1f5f9",
+      slate: { primary: "#f1f5f9", secondary: "#e2e8f0" },
       black: "#0f172a",
-      sky: '#f3fafb'
+      sky: "#f3fafb",
     },
     fontFamily: {
       cairo: ["Cairo"],
