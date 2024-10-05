@@ -3,12 +3,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{ts,tsx}"],
   theme: {
-    // screens: {
-    //   sm: "480px",
-    //   md: "768px",
-    //   lg: "976px",
-    //   xl: "1440px",
-    // },
+    screens: {
+      sm: "480px",
+      md: "860px",
+      lg: "1200px",
+    },
     colors: {
       red: { primary: "#e30818", secondary: "#ef4444", tertiary: "#b91c1c" },
       gray: { primary: "#a1a1a1", secondary: "#fafafa" },

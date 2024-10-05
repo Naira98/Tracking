@@ -18,7 +18,7 @@
   },
   "TRACK_FORM": {
     "TRACK_SHIPMENT": "تتبع شحنتك",
-    "TRACKING_QUOTE":"جميع تحديثات الشحنة ستكون متاحة من خلال هذا الرابط.",
+    "TRACKING_QUOTE": "جميع تحديثات الشحنة ستكون متاحة من خلال هذا الرابط.",
     "TRACKING_NUMBER": "رقم التتبع"
   },
   "TRACKING_INFO": {
@@ -35,7 +35,7 @@
   },
   "TIMELINE": {
     "TICKET_CREATED": "تم إنشاء الشحنة",
-    "PACKAGE_RECEIVED": "تم إستلام الشحنة من التاجر",
+    "PACKAGE_RECEIVED": "تم إستلام الشحنة",
     "OUT_FOR_DELIVERY": "الشحنة خرجت للتسليم",
     "DELIVERED": "تم التسليم"
   },
@@ -67,7 +67,7 @@
     "FM & Reverse Hub": "مركز FM & Reverse"
   },
   "REASONS": {
-    "Cancellation - The customer refuses to give the shipment to the star": "رفض العميل تسليم الشحنة للمندوب",
+    "Cancellation - The customer refuses to give the shipment to the star": "تم الإلغاء",
     "Uncovered Zone": "خارج منطقة التوصيل"
   },
   "ADDRESS": {

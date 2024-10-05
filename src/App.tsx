@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Tracking from "./pages/Tracking";
 import AppLayout from "./components/AppLayout";
 import "./utils/lang";
-import NotFound from "./pages/NotFound";
+import NotFoundPage from "./pages/NotFoundPage";
 import { ShipmentProvider } from "./context/ShipmentContext";
 
 const App = () => {
@@ -30,7 +30,7 @@ const App = () => {
               </ShipmentProvider>
             }
           />
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -22,7 +22,6 @@ const SearchShipment = ({
       navigate(`/track-shipments/${trackingNumber}`);
     }
   };
-  console.log(height, width);
   return (
     <form className="flex items-center justify-center">
       <input

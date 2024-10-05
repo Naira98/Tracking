@@ -14,7 +14,7 @@ const Tracking = () => {
   if (isPending) return <Spinner />;
 
   return (
-    <div className="grid grid-cols-1 gap-6 px-20 py-10 lg:grid-cols-3">
+    <div className="grid grid-cols-1 gap-6 p-10 lg:px-20 py-10 lg:grid-cols-3">
       <div className="col-span-1 rounded-lg border-2 border-slate-primary lg:col-span-3">
         <InfoShipment />
         <TimelineShipment />

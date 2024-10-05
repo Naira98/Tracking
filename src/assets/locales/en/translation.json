@@ -35,7 +35,7 @@
   },
   "TIMELINE": {
     "TICKET_CREATED": "Ticket Created",
-    "PACKAGE_RECEIVED": "Package Received From Sender",
+    "PACKAGE_RECEIVED": "Package Received",
     "OUT_FOR_DELIVERY": "Out For Delivery",
     "DELIVERED": "Delivered"
   },
@@ -67,7 +67,7 @@
     "FM & Reverse Hub": "FM & Reverse Hub"
   },
   "REASONS": {
-    "Cancellation - The customer refuses to give the shipment to the star": "The customer refuses to give the shipment to the star",
+    "Cancellation - The customer refuses to give the shipment to the star": "Cancellation",
     "Uncovered Zone": "Uncovered Zone"
   },
   "ADDRESS": {

@@ -9,8 +9,16 @@
     @apply transition-all duration-300;
   }
 
+  .arrow:dir(ltr) {
+    margin-left: 4px;
+  }
+
+  .arrow:dir(rtl) {
+    margin-right: 4px;
+  }
+
   .content-container {
-    @apply invisible absolute left-[50%] top-full min-w-max translate-x-[-50%] pt-0 opacity-0 transition-all duration-300;
+    @apply absolute left-[50%] top-full hidden min-w-max translate-x-[-50%] pt-0 opacity-0 transition-all duration-300;
   }
 
   &:hover {
@@ -23,7 +31,7 @@
     }
 
     .content-container {
-      @apply visible pt-4 opacity-100;
+      @apply block pt-4 opacity-100;
     }
   }
 }
