@@ -18,8 +18,7 @@
   }
 
   .content-container {
-    @apply absolute left-[50%] top-full hidden min-w-max translate-x-[-50%] pt-0 opacity-0 transition-all duration-300;
-  }
+    @apply invisible absolute left-[50%] top-full min-w-max translate-x-[-50%] pt-0 opacity-0 transition-all duration-300;  }
 
   &:hover {
     .text {
@@ -31,7 +30,7 @@
     }
 
     .content-container {
-      @apply block pt-4 opacity-100;
+      @apply visible pt-4 opacity-100;
     }
   }
 }
