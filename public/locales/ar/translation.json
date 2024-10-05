@@ -64,10 +64,10 @@
     "El-Mansoura Hub": "مركز المنصورة",
     "Cairo Sorting Facility": "منشأة الفرز بالقاهرة",
     "Beni Suef Hub": "مركز بني سويف",
-    "FM & Reverse Hub": "FM & Reverse Hub"
+    "FM & Reverse Hub": "مركز FM & Reverse"
   },
   "REASONS": {
-    "Cancellation - The customer refuses to give the shipment to the star": "رفض العميل إعطاء الشحنة للنجم",
+    "Cancellation - The customer refuses to give the shipment to the star": "رفض العميل تسليم الشحنة للمندوب",
     "Uncovered Zone": "خارج منطقة التوصيل"
   },
   "ADDRESS": {

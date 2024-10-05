@@ -22,16 +22,16 @@
     "TRACKING_NUMBER": "Tracking Number"
   },
   "TRACKING_INFO": {
-    "SHIPMENT_NUMBER": "Shipment Number",
+    "SHIPMENT_NUMBER": "Order Number",
     "LAST_UPDATE": "Last Update",
     "SOLD_BY": "Sold By",
     "SOLD_BY_EXAMPLE": "SOUQ.COM",
     "ARRIVING_DATE": "Arriving Date in"
   },
   "CURRENT_STATE": {
-    "DELIVERED": "Deliverd Shipment",
-    "DELIVERED_TO_SENDER": "Shipment not delivered yet",
-    "CANCELLED": "Canceled Shipment"
+    "DELIVERED": "Deliverd Order",
+    "DELIVERED_TO_SENDER": "Order not delivered yet",
+    "CANCELLED": "Canceled Order"
   },
   "TIMELINE": {
     "TICKET_CREATED": "Ticket Created",
@@ -75,7 +75,7 @@
     "ADDRESS_EXAMPLE": "House 17, Block 22, Talaat Harb Street, El Ommal City, next to Prince Imbaba, Cairo"
   },
   "PROBLEM": {
-    "TITLE": "Do you have any problem in your shipment ?!",
+    "TITLE": "Do you have any problem in your order ?!",
     "REPORT": "Report a problem",
     "CONTACT_US": "Contact Us On: "
   }

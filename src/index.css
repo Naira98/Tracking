@@ -5,35 +5,3 @@
 #root {
   font-family: "Cairo", sans-serif;
 }
-
-.loader {
-  width: 48px;
-  height: 48px;
-  border: 5px solid #fff;
-  border-bottom-color: #e30818;
-  border-radius: 50%;
-  display: inline-block;
-  box-sizing: border-box;
-  animation: rotation 1s linear infinite;
-}
-
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@layer components {
-  .nav-item {
-    @apply hover:text-red-primary hover:cursor-pointer hover:underline;
-  }
-  .tabel-head {
-    @apply bg-gray-secondary text-gray-primary h-14;
-  }
-  .table-row {
-    @apply h-14 border-b-2 border-slate-primary;
-  }
-}

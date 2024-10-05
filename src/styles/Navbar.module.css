@@ -1,0 +1,10 @@
+.nav-item {
+  @apply hover:text-red-primary hover:cursor-pointer hover:underline;
+  /* transition-all ease-in-out duration-300; */
+}
+/* 
+.nav-Item:hover {
+  .arrow {
+    @apply text-red-primary;
+  }
+} */

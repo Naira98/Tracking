@@ -1,3 +1,5 @@
+import styles from "../styles/Spinner.module.css";
+
 const Spinner = () => {
   return (
     <div
@@ -7,10 +9,10 @@ const Spinner = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        padding: "80px"
+        padding: "80px",
       }}
     >
-      <span className="loader"></span>
+      <span className={styles.loader}></span>
     </div>
   );
 };

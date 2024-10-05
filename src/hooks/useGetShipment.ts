@@ -3,10 +3,10 @@ import { trackShipment } from "../services/shipments";
 import { Shipment } from "../types/shipmentData";
 
 export const useGetShipment = (trackingNumber: string | undefined) => {
-  const query = useQuery<Shipment>({
+  const {data, isPending, error} = useQuery<Shipment>({
     queryKey: ["shipment", trackingNumber],
     queryFn: () => trackShipment(trackingNumber),
     retry: false,
   });
-  return query;
+  return  {data, isPending, error};
 };

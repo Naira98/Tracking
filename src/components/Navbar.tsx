@@ -1,11 +1,18 @@
 import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 import { Link } from "react-router-dom";
+import styles from "../styles/Navbar.module.css";
 import { useLang } from "../context/useLang";
+import ContactUs from "./ContactUs";
+import { useState } from "react";
+import DropDownMenu from "./DropDownMenu";
+import TrackForm from "./TrackForm";
+import Prices from "./Prices";
 
 const Navbar = () => {
   const { t } = useTranslation();
   const { lang, setLang } = useLang();
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleChangeLang = () => {
     const newLang = lang === "ar" ? "en" : "ar";
@@ -14,8 +21,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 flex h-16 items-center justify-between border-b-2 border-slate bg-sky p-10 px-20">
-      <div className="flex items-center justify-center">
+    <nav className="border-slate-primary bg-sky sticky top-0 z-20 flex h-16 items-center justify-between border-b-2 p-10 lg:px-20">
+      <div className="flex items-center justify-center px-3">
         <Link to="/">
           <img
             className="h-14 w-14"
@@ -24,23 +31,35 @@ const Navbar = () => {
           />
         </Link>
         <Link to="/">
-          <span className="text-red-primary text-2xl font-extrabold">
+          <span className="text-red-primary text-[22px] font-extrabold lg:text-[24px]">
             {t("NAVBAR.TITLE")}
           </span>
         </Link>
       </div>
 
       <div className="hidden md:block">
-        <div className="flex gap-6 font-extrabold">
-          <span className="nav-item">{t("NAVBAR.HOME")} </span>
-          <span className="nav-item">{t("NAVBAR.PRICES")}</span>
-          <span className="nav-item">{t("NAVBAR.CALL_SALES")}</span>
+        <div className="flex gap-6 text-sm font-extrabold lg:text-base">
+          <Link to={"/"}>
+            <span className={styles["nav-item"]}>{t("NAVBAR.HOME")} </span>
+          </Link>
+          <DropDownMenu content={<Prices />}>
+            <span className={styles["nav-item"]}>{t("NAVBAR.PRICES")}</span>
+          </DropDownMenu>
+          <button
+            onClick={() => setIsOpen(true)}
+            className={styles["nav-item"]}
+          >
+            {t("NAVBAR.CALL_SALES")}
+          </button>
         </div>
       </div>
+      <ContactUs isOpen={isOpen} setIsOpen={setIsOpen} />
 
-      <div className="flex gap-6 font-extrabold">
-        <span className="nav-item">{t("NAVBAR.TRACK_SHIPMENT")}</span>
-        <span className="nav-item">{t("NAVBAR.SIGN_UP")}</span>
+      <div className="flex gap-6 text-sm font-extrabold md:gap-3 lg:gap-8 lg:text-base">
+        <DropDownMenu content={<TrackForm />}>
+          <div className={styles["nav-item"]}>{t("NAVBAR.TRACK_SHIPMENT")}</div>
+        </DropDownMenu>
+        <span className={styles["nav-item"]}>{t("NAVBAR.SIGN_UP")}</span>
         <button className="text-red-primary" onClick={handleChangeLang}>
           {t("NAVBAR.LANG")}
         </button>

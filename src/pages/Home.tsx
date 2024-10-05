@@ -11,7 +11,7 @@ const Home = () => {
           {t("TRACK_FORM.TRACK_SHIPMENT")}
         </h1>
         <h1 className="text-md mb-6">{t("TRACK_FORM.TRACKING_QUOTE")}</h1>
-        <SearchShipment height={16} width={96} />
+        <SearchShipment height="4rem" width="24rem" searchSize={32} />
       </div>
     </div>
   );

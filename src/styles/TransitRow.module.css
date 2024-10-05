@@ -1,0 +1,3 @@
+.table-row {
+  @apply border-slate-primary flex h-14 flex-col items-start justify-center border-t-2 bg-white px-4;
+}

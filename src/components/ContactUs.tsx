@@ -37,7 +37,7 @@ const ContactUs = ({
       >
         <button
           onClick={() => setIsOpen(false)}
-          className={`border-slate-secondary absolute ${lang === "ar" ? "left-3" : "right-3"} top-3 rounded-full border-2 p-1 shadow-md`}
+          className={`border-slate-secondary absolute ${lang === "ar" ? "left-3" : "right-3"} top-3 rounded-full border-2 p-1 shadow-md hover:bg-gray-secondary`}
         >
           <IoCloseOutline size={24} color="#e30818" />
         </button>
