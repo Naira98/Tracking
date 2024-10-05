@@ -22,8 +22,8 @@ const InfoShipment = () => {
   }, [stateColor, setStateColor]);
 
   return (
-    <div className="flex items-center justify-between border-b-2 border-slate-primary px-10 py-7">
-      <div className="flex flex-col gap-3">
+    <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between border-b-2 border-slate-primary px-10 py-7">
+      <div className="flex flex-col lg:gap-3">
         <h1 className="text-gray-primary">
           {t("TRACKING_INFO.SHIPMENT_NUMBER")} # {data!.TrackingNumber}
         </h1>
@@ -32,19 +32,19 @@ const InfoShipment = () => {
         </h1>
       </div>
 
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col lg:gap-3">
         <h1 className="text-gray-primary">{t("TRACKING_INFO.LAST_UPDATE")}</h1>
         <h1 className="font-bold">
           {formatDateWithTime(lastUpdateDate, lang)}
         </h1>
       </div>
 
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col lg:gap-3">
         <h1 className="text-gray-primary">{t("TRACKING_INFO.SOLD_BY")}</h1>
         <h1 className="font-bold">{t("TRACKING_INFO.SOLD_BY_EXAMPLE")}</h1>
       </div>
 
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col lg:gap-3">
         <h1 className="text-gray-primary">
           {t("TRACKING_INFO.ARRIVING_DATE")}
         </h1>
