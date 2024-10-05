@@ -68,7 +68,7 @@
   },
   "REASONS": {
     "Cancellation - The customer refuses to give the shipment to the star": "تم الإلغاء",
-    "Uncovered Zone": "خارج منطقة التوصيل"
+    "Uncovered Zone": "خارج نطاق التوصيل"
   },
   "ADDRESS": {
     "TITLE": "عنوان التسليم",
