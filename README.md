@@ -13,4 +13,4 @@ This repository contains the front-end for the Bosta website, built using modern
 
 ## Features
 - **Responsive Design**: Fully responsive UI built with Tailwind CSS to ensure compatibility across all devices.
-- **Multilingual Support**: English and Arabic support via internationalization (i18n) using `react-i18next`.
+- **Multilingual Support**: English and Arabic support via internationalization (i18n) using `i18next`.
