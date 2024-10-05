@@ -1,14 +1,14 @@
 import { CurrentStateEnum } from "../types/shipmentData";
 
-interface Color {
+export interface Color {
   text: string;
   background: string;
 }
 
 const colors = {
-  yellow: { text: "text-yellow", background: "background-yellow" },
-  green: { text: "text-green", background: "background-green" },
-  red: { text: "text-red-primary", background: "background-red-primary" },
+  yellow: { text: "text-yellow", background: "bg-yellow" },
+  green: { text: "text-green", background: "bg-green" },
+  red: { text: "text-red-primary", background: "bg-red-primary" },
 };
 
 const classes: Record<CurrentStateEnum, Color> = {
