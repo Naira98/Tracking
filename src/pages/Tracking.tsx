@@ -15,7 +15,7 @@ const Tracking = () => {
 
   return (
     <div className="grid grid-cols-1 gap-6 px-20 py-10 lg:grid-cols-3">
-      <div className="border-slate-primary col-span-1 rounded-lg border-2 lg:col-span-3">
+      <div className="col-span-1 rounded-lg border-2 border-slate-primary lg:col-span-3">
         <InfoShipment />
         <TimelineShipment />
       </div>

@@ -1,23 +1,20 @@
 import { ReactNode } from "react";
-import styles from "../styles/DropDownMenu.module.css";
-// import navbarStyles from "../styles/Navbar.module.css";
+import styles from "./DropDownMenu.module.css";
 import { FiChevronDown } from "react-icons/fi";
 
 interface DropDwonMenuProps {
+  text: string;
   children: ReactNode;
-  content: ReactNode;
 }
 
-const DropDownMenu = ({ children, content }: DropDwonMenuProps) => {
+const DropDownMenu = ({ text, children }: DropDwonMenuProps) => {
   return (
     <div className={styles.container}>
-      {children}
-      
-      <FiChevronDown
-          // className={navbarStyles.arrow}
-        />
+      <div className={styles.text}>{text}</div>
 
-      <div className={styles["content-container"]}>{content}</div>
+      <FiChevronDown className={styles.arrow} />
+
+      <div className={styles["content-container"]}>{children}</div>
     </div>
   );
 };

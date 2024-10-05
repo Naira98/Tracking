@@ -1,0 +1,29 @@
+.container {
+  @apply relative flex items-center;
+
+  .text {
+    @apply cursor-pointer;
+  }
+
+  .arrow {
+    @apply transition-all duration-300;
+  }
+
+  .content-container {
+    @apply invisible absolute left-[50%] top-full min-w-max translate-x-[-50%] pt-0 opacity-0 transition-all duration-300;
+  }
+
+  &:hover {
+    .text {
+      @apply text-red-primary underline;
+    }
+
+    .arrow {
+      @apply scale-y-[-100%] text-red-primary;
+    }
+
+    .content-container {
+      @apply visible pt-4 opacity-100;
+    }
+  }
+}

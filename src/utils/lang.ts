@@ -1,27 +1,19 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
-import HttpApi from "i18next-http-backend";
+import ar from "../assets/locales/ar/translation.json";
+import en from "../assets/locales/en/translation.json";
 
 i18n
   .use(initReactI18next)
   .use(LanguageDetector)
-  .use(HttpApi)
   .init({
-    fallbackLng: "en",
     detection: {
-      order: [
-        "cookie",
-        "htmlTag",
-        "localStorage",
-        "sessionStorage",
-        "navigator",
-        "path",
-        "subdomain",
-      ],
-      caches: ["cookie"],
+      order: ["localStorage", "htmlTag"],
+      caches: ["localStorage"],
     },
-    backend: {
-      loadPath: "/locales/{{lng}}/translation.json",
+    resources: {
+      ar: { translation: ar },
+      en: { translation: en },
     },
   });

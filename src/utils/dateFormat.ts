@@ -6,7 +6,7 @@ export const formatDateWithTime = (date: string, lang: string) => {
 };
 
 export const formatDateWithDay = (date: string, lang: string) => {
-  return new Intl.DateTimeFormat([`${lang === "ar" ? "ar-AE" : "en-GB"}`], {
+  return new Intl.DateTimeFormat([`${lang === "ar" ? "ar" : "en"}`], {
     day: "numeric",
     month: "long",
     weekday: "long",
