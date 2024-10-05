@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
-import ContactUs from "./ContactUs";
+import ContactUs from "../Problem/ContactUs";
 import { useState } from "react";
 import DropDownMenu from "./DropDownMenu";
-import TrackForm from "./TrackForm";
+import TrackForm from "../TrackShipment/TrackForm";
 import Prices from "./Prices";
 
 const Navbar = () => {
@@ -51,7 +51,9 @@ const Navbar = () => {
       <ContactUs isOpen={isOpen} setIsOpen={setIsOpen} />
 
       <div className="flex gap-6 text-sm font-extrabold md:gap-3 lg:gap-8 lg:text-base">
-        <DropDownMenu text={t("NAVBAR.TRACK_SHIPMENT")}>{<TrackForm />}</DropDownMenu>
+        <DropDownMenu text={t("NAVBAR.TRACK_SHIPMENT")}>
+          {<TrackForm />}
+        </DropDownMenu>
         <span className={styles["nav-item"]}>{t("NAVBAR.SIGN_UP")}</span>
         <button className="text-red-primary" onClick={handleChangeLang}>
           {t("NAVBAR.LANG")}

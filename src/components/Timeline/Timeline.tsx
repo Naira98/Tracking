@@ -2,7 +2,7 @@ import clsx from "clsx";
 import { ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import { FaCheck } from "react-icons/fa";
-import { Color } from "../utils/stateColor";
+import { Color } from "../../utils/stateColor";
 
 interface TimelineStep {
   state: "DONE" | "IN PROGRESS" | "UPCOMING";

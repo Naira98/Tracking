@@ -26,7 +26,7 @@ const SearchShipment = ({
     <form className="flex items-center justify-center">
       <input
         style={{ height: height, width: width }}
-        className="border-slate-primary focus:ring-slate-primary rounded-s-md border-2 px-4 shadow-sm transition-all focus:outline-none focus:ring focus:ring-opacity-75 focus:ring-offset-0"
+        className="border-slate-primary focus:ring-slate-primary rounded-s-md border-2 px-3 shadow-sm transition-all focus:outline-none focus:ring focus:ring-opacity-75 focus:ring-offset-0"
         type="text"
         placeholder={t("TRACK_FORM.TRACKING_NUMBER")}
         value={trackingNumber}

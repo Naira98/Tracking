@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Home from "./pages/Home";
 import Tracking from "./pages/Tracking";
-import AppLayout from "./components/AppLayout";
+import AppLayout from "./components/Layout/AppLayout";
 import "./utils/lang";
 import NotFoundPage from "./pages/NotFoundPage";
 import { ShipmentProvider } from "./context/ShipmentContext";

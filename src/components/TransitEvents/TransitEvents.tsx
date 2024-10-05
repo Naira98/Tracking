@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { useShipment } from "../context/useShipment";
+import { useShipment } from "../../context/useShipment";
 import TransitRow from "./TransitRow";
 
 const TransitEvents = () => {

@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-import styles from "./DropDownMenu.module.css";
 import { FiChevronDown } from "react-icons/fi";
+import styles from "./DropDownMenu.module.css";
 
 interface DropDwonMenuProps {
   text: string;

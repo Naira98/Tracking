@@ -3,7 +3,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { RiCustomerService2Line } from "react-icons/ri";
 import { IoCloseOutline } from "react-icons/io5";
-import { SUPPORT_PHONE_NUMBER } from "../utils/constants";
+import { SUPPORT_PHONE_NUMBER } from "../../utils/constants";
 
 const ContactUs = ({
   isOpen,

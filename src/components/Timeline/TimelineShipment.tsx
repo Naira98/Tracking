@@ -4,10 +4,10 @@ import { FaCheck } from "react-icons/fa";
 import { GoPackageDependencies } from "react-icons/go";
 import { FaTruckFast } from "react-icons/fa6";
 import { FiSave } from "react-icons/fi";
-import { useShipment } from "../context/useShipment";
 import Timeline from "./Timeline";
-import { TransitStateEnum } from "../types/shipmentData";
-import { getStateColor } from "../utils/stateColor";
+import { useShipment } from "../../context/useShipment";
+import { TransitStateEnum } from "../../types/shipmentData";
+import { getStateColor } from "../../utils/stateColor";
 
 const transitStateStepMap: Partial<Record<TransitStateEnum, number>> = {
   PACKAGE_RECEIVED: 1,

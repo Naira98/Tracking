@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
-import { useShipment } from "../context/useShipment";
-import { formatDateWithDay, formatDateWithTime } from "../utils/dateFormat";
-import { getStateColor } from "../utils/stateColor";
+import { useShipment } from "../../context/useShipment";
+import { formatDateWithDay, formatDateWithTime } from "../../utils/dateFormat";
+import { getStateColor } from "../../utils/stateColor";
 
 const InfoShipment = () => {
   const { shipment } = useShipment();

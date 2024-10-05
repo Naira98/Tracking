@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
-import { TransitState } from "../types/shipmentData";
-import { formatDate, formatTime } from "../utils/dateFormat";
-import { useShipment } from "../context/useShipment";
+import { TransitState } from "../../types/shipmentData";
+import { formatDate, formatTime } from "../../utils/dateFormat";
+import { useShipment } from "../../context/useShipment";
+import { getStateColor } from "../../utils/stateColor";
 import styles from "./TransitRow.module.css";
-import { getStateColor } from "../utils/stateColor";
 
 const TransitRow = ({ row }: { row: TransitState }) => {
   const { t, i18n } = useTranslation();
