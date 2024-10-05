@@ -6,7 +6,7 @@
   }
 
   .arrow {
-    @apply transition-all duration-300;
+    @apply transition-all duration-300 cursor-pointer;
   }
 
   .arrow:dir(ltr) {
