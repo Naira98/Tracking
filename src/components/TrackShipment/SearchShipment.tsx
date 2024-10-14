@@ -34,6 +34,7 @@ const SearchShipment = ({
       />
       <button
         onClick={handleClick}
+        disabled={!trackingNumber}
         style={{ height: height, width: height }}
         className={`h-${height} w-${height} rounded-e-md ${isDisabled ? "bg-red-secondary cursor-not-allowed" : "bg-red-primary cursor-pointer shadow-sm"}`}
       >

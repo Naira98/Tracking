@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { FaCheck } from "react-icons/fa";
 import { GoPackageDependencies } from "react-icons/go";
 import { FaTruckFast } from "react-icons/fa6";
-import { FiSave } from "react-icons/fi";
+import { LuPackageCheck } from "react-icons/lu";
 import Timeline from "./Timeline";
 import { useShipment } from "../../context/useShipment";
 import { TransitStateEnum } from "../../types/shipmentData";
@@ -56,7 +56,7 @@ const TimelineShipment = () => {
             state: step < 2 ? "UPCOMING" : step == 2 ? "IN PROGRESS" : "DONE",
           },
           {
-            icon: <FiSave size={24} />,
+            icon: <LuPackageCheck size={24} />,
             text: t("TIMELINE.DELIVERED"),
             state: step < 3 ? "UPCOMING" : "DONE",
           },
